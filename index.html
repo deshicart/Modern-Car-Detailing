@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-GB" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>DV Car Care | Car Detailing in Liverpool</title>
+    <meta
+      name="description"
+      content="Professional car care and detailing services in Liverpool. Explore DV Car Care services, gallery and contact options."
+    />
+    <meta name="author" content="DV Car Care" />
+    <link rel="canonical" href="https://www.dvcarcare.co.uk/" />
+
+    <!-- Theme / favicon -->
+    <meta name="theme-color" content="#0a0b0e" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Applies the stored colour theme before first paint (defaults to dark) -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("dvc-theme") === "light" ? "light" : "dark";
+          document.documentElement.dataset.theme = t;
+          if (t === "light") {
+            var m = document.querySelector('meta[name="theme-color"]');
+            if (m) m.setAttribute("content", "#f8f7f2");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DV Car Care" />
+    <meta property="og:title" content="DV Car Care | Car Detailing in Liverpool" />
+    <meta
+      property="og:description"
+      content="Professional car care and detailing services in Liverpool. Explore DV Car Care services, gallery and contact options."
+    />
+    <meta property="og:url" content="https://www.dvcarcare.co.uk/" />
+    <meta property="og:image" content="https://www.dvcarcare.co.uk/images/hero.jpg" />
+    <meta property="og:locale" content="en_GB" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DV Car Care | Car Detailing in Liverpool" />
+    <meta
+      name="twitter:description"
+      content="Professional car care and detailing services in Liverpool. Explore DV Car Care services, gallery and contact options."
+    />
+    <meta name="twitter:image" content="https://www.dvcarcare.co.uk/images/hero.jpg" />
+
+    <style>
+      html {
+        scrollbar-width: none;
+      }
+      html::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Local business structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutoWash",
+        "name": "DV Car Care",
+        "description": "Professional car care and detailing services in Liverpool. Explore DV Car Care services, gallery and contact options.",
+        "url": "https://www.dvcarcare.co.uk/",
+        "telephone": "+44 7700 900 123",
+        "image": "https://www.dvcarcare.co.uk/images/hero.jpg",
+        "priceRange": "££",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "94 Hale Road, Speke",
+          "addressLocality": "Liverpool",
+          "postalCode": "L24 1WH",
+          "addressCountry": "GB"
+        },
+        "areaServed": ["Liverpool", "Speke", "Merseyside"]
+      }
+    </script>
+  </head>
+  <body>
+    <a
+      href="#main"
+      class="skip-link fixed left-4 top-4 z-[100] -translate-y-24 rounded-sm bg-bronze px-4 py-2 text-sm font-semibold text-onaccent transition-transform focus:translate-y-0"
+    >
+      Skip to main content
+    </a>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
