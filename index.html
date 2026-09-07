@@ -1,104 +1,1016 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-GB" data-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DV Car Care | Car Detailing in Liverpool</title>
+  <meta name="description" content="Professional car care and detailing services in Liverpool. Explore DV Car Care services, gallery and contact options.">
+  <meta name="author" content="DV Car Care">
+  <link rel="canonical" href="https://www.dvcarcare.co.uk/">
+  <meta name="theme-color" content="#0a0b0e">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0b0e'/%3E%3Crect x='1.5' y='1.5' width='61' height='61' rx='10.5' fill='none' stroke='%23c6a664' stroke-opacity='0.45' stroke-width='1.5'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='system-ui, -apple-system, sans-serif' font-size='26' font-weight='700' letter-spacing='1' fill='%23c6a664'%3EDV%3C/text%3E%3C/svg%3E">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("dvc-theme") === "light" ? "light" : "dark";
+        document.documentElement.dataset.theme = t;
+        if (t === "light") {
+          var m = document.querySelector('meta[name="theme-color"]');
+          if (m) m.setAttribute("content", "#f8f7f2");
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DV Car Care">
+  <meta property="og:title" content="DV Car Care | Car Detailing in Liverpool">
+  <meta property="og:description" content="Professional car care and detailing services in Liverpool. Explore DV Car Care services, gallery and contact options.">
+  <meta property="og:url" content="https://www.dvcarcare.co.uk/">
+  <meta property="og:image" content="https://www.dvcarcare.co.uk/images/hero.jpg">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DV Car Care | Car Detailing in Liverpool">
+  <meta name="twitter:description" content="Professional car care and detailing services in Liverpool. Explore DV Car Care services, gallery and contact options.">
+  <meta name="twitter:image" content="https://www.dvcarcare.co.uk/images/hero.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoWash",
+    "name": "DV Car Care",
+    "description": "Professional car care and detailing services in Liverpool. Explore DV Car Care services, gallery and contact options.",
+    "url": "https://www.dvcarcare.co.uk/",
+    "telephone": "+44 7700 900 123",
+    "image": "https://www.dvcarcare.co.uk/images/hero.jpg",
+    "priceRange": "\u00a3\u00a3",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "94 Hale Road, Speke",
+      "addressLocality": "Liverpool",
+      "postalCode": "L24 1WH",
+      "addressCountry": "GB"
+    },
+    "areaServed": ["Liverpool", "Speke", "Merseyside"]
+  }
+  </script>
+  <style>
+    html {
+      scrollbar-width: none;
+    }
+    html::-webkit-scrollbar {
+      display: none;
+    }
 
-    <!-- Primary SEO -->
-    <title>DV Car Care | Car Detailing in Liverpool</title>
-    <meta
-      name="description"
-      content="Professional car care and detailing services in Liverpool. Explore DV Car Care services, gallery and contact options."
-    />
-    <meta name="author" content="DV Car Care" />
-    <link rel="canonical" href="https://www.dvcarcare.co.uk/" />
+    /* ── Reset & Base ────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transition: background-color 0.3s, color 0.3s;
+    }
 
-    <!-- Theme / favicon -->
-    <meta name="theme-color" content="#0a0b0e" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    /* ── Theme Tokens ────────────────────────────────────── */
+    :root {
+      --font-heading: 'Space Grotesk', system-ui, sans-serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+      --color-bronze: #c6a664;
+      --color-bronze-light: #d4b878;
+      --color-bronze-dark: #a88a4a;
+      --max-width: 1200px;
+      --section-py: clamp(4rem, 8vw, 7rem);
+    }
 
-    <!-- Applies the stored colour theme before first paint (defaults to dark) -->
-    <script>
-      (function () {
-        try {
-          var t = localStorage.getItem("dvc-theme") === "light" ? "light" : "dark";
-          document.documentElement.dataset.theme = t;
-          if (t === "light") {
-            var m = document.querySelector('meta[name="theme-color"]');
-            if (m) m.setAttribute("content", "#f8f7f2");
+    [data-theme="dark"] {
+      --bg-primary: #0a0b0e;
+      --bg-secondary: #111216;
+      --bg-tertiary: #1a1b21;
+      --bg-card: #14151a;
+      --text-primary: #f0efe9;
+      --text-secondary: #a8a9a3;
+      --text-tertiary: #6b6c66;
+      --border: #222329;
+      --border-light: #2a2b31;
+      --shadow: 0 4px 24px rgba(0,0,0,0.4);
+      --shadow-lg: 0 12px 48px rgba(0,0,0,0.5);
+      --overlay: rgba(10,11,14,0.85);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8f7f2;
+      --bg-secondary: #efeee8;
+      --bg-tertiary: #e4e3dc;
+      --bg-card: #ffffff;
+      --text-primary: #1a1b21;
+      --text-secondary: #5a5b55;
+      --text-tertiary: #8a8b85;
+      --border: #d4d3cc;
+      --border-light: #e4e3dc;
+      --shadow: 0 4px 24px rgba(0,0,0,0.08);
+      --shadow-lg: 0 12px 48px rgba(0,0,0,0.12);
+      --overlay: rgba(248,247,242,0.85);
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+    }
+
+    /* ── Utilities ────────────────────────────────────────── */
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 clamp(1rem, 4vw, 2rem); }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .skip-link {
+      position: fixed; left: 1rem; top: 1rem; z-index: 100;
+      padding: 0.5rem 1rem; border-radius: 0.25rem;
+      background: var(--color-bronze); color: #0a0b0e;
+      font-size: 0.875rem; font-weight: 600;
+      text-decoration: none;
+      transform: translateY(-150%);
+      transition: transform 0.2s;
+    }
+    .skip-link:focus { transform: translateY(0); }
+
+    /* ── Header ──────────────────────────────────────────── */
+    .site-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      background: var(--overlay);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: background 0.3s, border-color 0.3s;
+    }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      max-width: var(--max-width); margin: 0 auto;
+      padding: 0 clamp(1rem, 4vw, 2rem);
+      height: 4rem;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 0.75rem;
+      text-decoration: none; color: var(--text-primary);
+    }
+    .logo-mark {
+      width: 2.25rem; height: 2.25rem; border-radius: 0.5rem;
+      background: var(--bg-tertiary); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-heading); font-weight: 700; font-size: 0.8rem;
+      color: var(--color-bronze); letter-spacing: 0.05em;
+      transition: border-color 0.3s, background 0.3s;
+    }
+    .logo-text {
+      font-family: var(--font-heading); font-weight: 600;
+      font-size: 1rem; letter-spacing: 0.02em;
+    }
+    .nav-links {
+      display: flex; align-items: center; gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none; color: var(--text-secondary);
+      font-size: 0.875rem; font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--color-bronze); }
+    .header-actions { display: flex; align-items: center; gap: 0.75rem; }
+    .theme-toggle {
+      width: 2.25rem; height: 2.25rem; border-radius: 0.5rem;
+      background: var(--bg-tertiary); border: 1px solid var(--border);
+      color: var(--text-secondary); cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.2s;
+    }
+    .theme-toggle:hover { color: var(--color-bronze); border-color: var(--color-bronze); }
+    .theme-toggle svg { width: 1.125rem; height: 1.125rem; }
+    .btn-primary {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 0.625rem 1.25rem; border-radius: 0.5rem;
+      background: var(--color-bronze); color: #0a0b0e;
+      font-family: var(--font-heading); font-weight: 600; font-size: 0.875rem;
+      text-decoration: none; border: none; cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-primary:hover { background: var(--color-bronze-light); transform: translateY(-1px); }
+    .mobile-toggle {
+      display: none; width: 2.25rem; height: 2.25rem;
+      background: none; border: none; cursor: pointer;
+      color: var(--text-primary); padding: 0;
+    }
+    .mobile-toggle svg { width: 1.5rem; height: 1.5rem; }
+
+    /* ── Hero ────────────────────────────────────────────── */
+    .hero {
+      position: relative; min-height: 100vh;
+      display: flex; align-items: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+    }
+    .hero-bg img {
+      width: 100%; height: 100%; object-fit: cover;
+      filter: brightness(0.4);
+    }
+    .hero-bg::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to bottom, transparent 40%, var(--bg-primary) 100%);
+    }
+    .hero-content {
+      position: relative; z-index: 1;
+      max-width: var(--max-width); margin: 0 auto;
+      padding: 0 clamp(1rem, 4vw, 2rem);
+      padding-top: 6rem;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.375rem 0.875rem; border-radius: 100px;
+      background: rgba(198, 166, 100, 0.12);
+      border: 1px solid rgba(198, 166, 100, 0.25);
+      color: var(--color-bronze); font-size: 0.8rem; font-weight: 500;
+      margin-bottom: 1.5rem;
+    }
+    .hero-badge svg { width: 1rem; height: 1rem; }
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 700; line-height: 1.05;
+      letter-spacing: -0.02em;
+      max-width: 700px; margin-bottom: 1.25rem;
+    }
+    .hero h1 span { color: var(--color-bronze); }
+    .hero-sub {
+      font-size: clamp(1rem, 1.5vw, 1.125rem);
+      color: var(--text-secondary);
+      max-width: 480px; margin-bottom: 2rem;
+    }
+    .hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .btn-secondary {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 0.625rem 1.25rem; border-radius: 0.5rem;
+      background: transparent; color: var(--text-primary);
+      font-family: var(--font-heading); font-weight: 600; font-size: 0.875rem;
+      text-decoration: none; border: 1px solid var(--border);
+      cursor: pointer; transition: all 0.2s;
+    }
+    .btn-secondary:hover { border-color: var(--color-bronze); color: var(--color-bronze); }
+    .hero-stats {
+      display: flex; gap: 3rem; margin-top: 4rem;
+      padding-top: 2rem; border-top: 1px solid var(--border);
+    }
+    .stat-item { text-align: left; }
+    .stat-value {
+      font-family: var(--font-heading); font-size: 1.75rem;
+      font-weight: 700; color: var(--color-bronze);
+    }
+    .stat-label { font-size: 0.8rem; color: var(--text-tertiary); margin-top: 0.125rem; }
+
+    /* ── Sections ────────────────────────────────────────── */
+    .section { padding: var(--section-py) 0; }
+    .section-header { margin-bottom: 3rem; }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-size: 0.8rem; font-weight: 500; color: var(--color-bronze);
+      text-transform: uppercase; letter-spacing: 0.08em;
+      margin-bottom: 0.75rem;
+    }
+    .section-label::before {
+      content: ''; width: 1.5rem; height: 1px;
+      background: var(--color-bronze);
+    }
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      font-weight: 700; line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+    .section-desc {
+      font-size: 1rem; color: var(--text-secondary);
+      max-width: 520px; margin-top: 0.75rem;
+    }
+
+    /* ── Services ────────────────────────────────────────── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+    .service-card {
+      padding: 2rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      transition: all 0.3s;
+    }
+    .service-card:hover {
+      border-color: var(--color-bronze);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+    .service-icon {
+      width: 3rem; height: 3rem; border-radius: 0.625rem;
+      background: rgba(198, 166, 100, 0.1);
+      border: 1px solid rgba(198, 166, 100, 0.2);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--color-bronze); margin-bottom: 1.25rem;
+    }
+    .service-icon svg { width: 1.5rem; height: 1.5rem; }
+    .service-card h3 {
+      font-family: var(--font-heading); font-size: 1.125rem;
+      font-weight: 600; margin-bottom: 0.5rem;
+    }
+    .service-card p {
+      font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;
+    }
+
+    /* ── Gallery ─────────────────────────────────────────── */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .gallery-item {
+      position: relative; border-radius: 0.75rem;
+      overflow: hidden; aspect-ratio: 4/3;
+      cursor: pointer;
+    }
+    .gallery-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.5s;
+    }
+    .gallery-item:hover img { transform: scale(1.05); }
+    .gallery-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);
+      opacity: 0; transition: opacity 0.3s;
+      display: flex; align-items: flex-end; padding: 1.25rem;
+    }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-overlay span {
+      color: #fff; font-weight: 500; font-size: 0.9rem;
+    }
+    .gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 2; aspect-ratio: auto; }
+
+    /* ── About ───────────────────────────────────────────── */
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 4rem; align-items: center;
+    }
+    .about-image {
+      position: relative; border-radius: 0.75rem;
+      overflow: hidden; aspect-ratio: 4/5;
+    }
+    .about-image img { width: 100%; height: 100%; object-fit: cover; }
+    .about-content .section-label { margin-bottom: 0.75rem; }
+    .about-content h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.75rem, 3vw, 2.5rem);
+      font-weight: 700; line-height: 1.15;
+      letter-spacing: -0.02em; margin-bottom: 1.25rem;
+    }
+    .about-content p {
+      color: var(--text-secondary); font-size: 1rem;
+      margin-bottom: 1.5rem; line-height: 1.7;
+    }
+    .about-features {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 1rem; margin-top: 2rem;
+    }
+    .about-feature {
+      display: flex; align-items: flex-start; gap: 0.75rem;
+    }
+    .about-feature-icon {
+      flex-shrink: 0; width: 2rem; height: 2rem;
+      border-radius: 0.375rem; background: rgba(198, 166, 100, 0.1);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--color-bronze);
+    }
+    .about-feature-icon svg { width: 1rem; height: 1rem; }
+    .about-feature span { font-size: 0.875rem; font-weight: 500; }
+
+    /* ── CTA ─────────────────────────────────────────────── */
+    .cta-section {
+      position: relative; padding: var(--section-py) 0;
+      overflow: hidden;
+    }
+    .cta-bg {
+      position: absolute; inset: 0;
+    }
+    .cta-bg img {
+      width: 100%; height: 100%; object-fit: cover;
+      filter: brightness(0.3);
+    }
+    .cta-bg::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(10,11,14,0.9), rgba(10,11,14,0.7));
+    }
+    .cta-content {
+      position: relative; z-index: 1; text-align: center;
+      max-width: 600px; margin: 0 auto;
+    }
+    .cta-content h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      font-weight: 700; line-height: 1.15;
+      letter-spacing: -0.02em; margin-bottom: 1rem;
+    }
+    .cta-content p {
+      color: var(--text-secondary); font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    .cta-actions { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+
+    /* ── Footer ──────────────────────────────────────────── */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0 2rem;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem; margin-bottom: 3rem;
+    }
+    .footer-brand p {
+      color: var(--text-secondary); font-size: 0.875rem;
+      margin-top: 0.75rem; max-width: 280px;
+    }
+    .footer-col h4 {
+      font-family: var(--font-heading); font-size: 0.8rem;
+      font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--text-tertiary);
+      margin-bottom: 1rem;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 0.5rem; }
+    .footer-col a {
+      color: var(--text-secondary); text-decoration: none;
+      font-size: 0.875rem; transition: color 0.2s;
+    }
+    .footer-col a:hover { color: var(--color-bronze); }
+    .footer-bottom {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-top: 2rem; border-top: 1px solid var(--border);
+      font-size: 0.8rem; color: var(--text-tertiary);
+    }
+    .footer-social { display: flex; gap: 0.75rem; }
+    .footer-social a {
+      width: 2rem; height: 2rem; border-radius: 0.375rem;
+      background: var(--bg-tertiary); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-secondary); text-decoration: none;
+      transition: all 0.2s;
+    }
+    .footer-social a:hover { color: var(--color-bronze); border-color: var(--color-bronze); }
+    .footer-social svg { width: 1rem; height: 1rem; }
+
+    /* ── Lightbox ────────────────────────────────────────── */
+    .lightbox {
+      position: fixed; inset: 0; z-index: 100;
+      background: rgba(0,0,0,0.92);
+      display: none; align-items: center; justify-content: center;
+      padding: 2rem; cursor: pointer;
+    }
+    .lightbox.active { display: flex; }
+    .lightbox img {
+      max-width: 90vw; max-height: 85vh;
+      border-radius: 0.5rem; object-fit: contain;
+    }
+    .lightbox-close {
+      position: absolute; top: 1.5rem; right: 1.5rem;
+      width: 2.5rem; height: 2.5rem; border-radius: 50%;
+      background: rgba(255,255,255,0.1); border: none;
+      color: #fff; cursor: pointer; font-size: 1.5rem;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s;
+    }
+    .lightbox-close:hover { background: rgba(255,255,255,0.2); }
+
+    /* ── Mobile Menu ─────────────────────────────────────── */
+    .mobile-menu {
+      position: fixed; inset: 0; z-index: 60;
+      background: var(--bg-primary);
+      display: none; flex-direction: column;
+      padding: 5rem 2rem 2rem;
+    }
+    .mobile-menu.active { display: flex; }
+    .mobile-menu-links { list-style: none; }
+    .mobile-menu-links li { border-bottom: 1px solid var(--border); }
+    .mobile-menu-links a {
+      display: block; padding: 1rem 0;
+      color: var(--text-primary); text-decoration: none;
+      font-family: var(--font-heading); font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .mobile-menu-actions {
+      margin-top: auto; padding-top: 2rem;
+      display: flex; flex-direction: column; gap: 0.75rem;
+    }
+    .mobile-menu-actions .btn-primary,
+    .mobile-menu-actions .btn-secondary {
+      width: 100%; text-align: center;
+    }
+
+    /* ── Responsive ──────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .nav-links { display: none; }
+      .header-actions .btn-primary { display: none; }
+      .mobile-toggle { display: flex; align-items: center; justify-content: center; }
+      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .about-image { max-width: 500px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .hero-stats { flex-direction: column; gap: 1.5rem; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 1; aspect-ratio: 16/9; }
+      .about-features { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item:nth-child(1) { grid-column: span 1; aspect-ratio: 4/3; }
+      .hero-actions { flex-direction: column; }
+      .hero-actions .btn-primary, .hero-actions .btn-secondary { width: 100%; text-align: center; }
+    }
+
+    /* ── Animations ──────────────────────────────────────── */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-in {
+      opacity: 0;
+      animation: fadeInUp 0.6s ease forwards;
+    }
+    .animate-delay-1 { animation-delay: 0.1s; }
+    .animate-delay-2 { animation-delay: 0.2s; }
+    .animate-delay-3 { animation-delay: 0.3s; }
+    .animate-delay-4 { animation-delay: 0.4s; }
+
+    /* ── Scroll Animation ────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <div class="logo-mark">DV</div>
+        <span class="logo-text">DV Car Care</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <a href="#contact" class="btn-primary">Book Now</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-toggle" id="mobileClose" aria-label="Close menu" style="position:absolute;top:1rem;right:1rem;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    <ul class="mobile-menu-links">
+      <li><a href="#services" data-mobile-link>Services</a></li>
+      <li><a href="#gallery" data-mobile-link>Gallery</a></li>
+      <li><a href="#about" data-mobile-link>About</a></li>
+      <li><a href="#contact" data-mobile-link>Contact</a></li>
+    </ul>
+    <div class="mobile-menu-actions">
+      <a href="#contact" class="btn-primary" data-mobile-link>Book Now</a>
+      <a href="tel:+447700900123" class="btn-secondary">Call Us</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="public/images/hero.jpg" alt="Professional car detailing in Liverpool" loading="eager">
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge animate-in">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Liverpool, United Kingdom
+        </div>
+        <h1 class="animate-in animate-delay-1">Premium Car Care <span>& Detailing</span></h1>
+        <p class="hero-sub animate-in animate-delay-2">Professional detailing services in the heart of Liverpool. We treat every vehicle with the precision and care it deserves.</p>
+        <div class="hero-actions animate-in animate-delay-3">
+          <a href="#contact" class="btn-primary">Book a Detail</a>
+          <a href="#services" class="btn-secondary">Our Services</a>
+        </div>
+        <div class="hero-stats animate-in animate-delay-4">
+          <div class="stat-item">
+            <div class="stat-value">500+</div>
+            <div class="stat-label">Vehicles Detailed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">100%</div>
+            <div class="stat-label">Satisfaction</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">5+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-label">What We Offer</div>
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-desc">From a quick wash to a full paint correction, we offer a range of services to keep your vehicle looking its best.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v1m0 16v1m-8-9H3m18 0h-1M5.6 5.6l.7.7m12.1 12.1.7.7M5.6 18.4l.7-.7M18.4 5.6l-.7.7"/><circle cx="12" cy="12" r="4"/></svg>
+            </div>
+            <h3>Exterior Detailing</h3>
+            <p>Complete exterior wash, decontamination, and protection to restore your vehicle's finish.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            </div>
+            <h3>Interior Detailing</h3>
+            <p>Deep cleaning of all interior surfaces, carpets, and upholstery for a fresh cabin feel.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72Z"/><path d="m14 7 3 3"/></svg>
+            </div>
+            <h3>Paint Correction</h3>
+            <p>Remove swirl marks, scratches, and oxidation to restore a flawless paint finish.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>Ceramic Coating</h3>
+            <p>Long-lasting paint protection that enhances gloss and shields against environmental damage.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3>Full Valet</h3>
+            <p>Comprehensive inside and out cleaning package for the complete vehicle refresh.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+            </div>
+            <h3>Machine Polishing</h3>
+            <p>Professional machine polishing to achieve a mirror-like finish on your vehicle's paintwork.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section" id="gallery" style="background:var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-label">Our Work</div>
+          <h2 class="section-title">Gallery</h2>
+          <p class="section-desc">See the quality of our work across a range of vehicles and services.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item reveal" data-src="public/images/hero.jpg" data-alt="Full vehicle detail">
+            <img src="public/images/hero.jpg" alt="Full vehicle detail" loading="lazy">
+            <div class="gallery-overlay"><span>Full Detail</span></div>
+          </div>
+          <div class="gallery-item reveal" data-src="public/images/work-wash.jpg" data-alt="Exterior wash">
+            <img src="public/images/work-wash.jpg" alt="Exterior wash" loading="lazy">
+            <div class="gallery-overlay"><span>Exterior Wash</span></div>
+          </div>
+          <div class="gallery-item reveal" data-src="public/images/work-polish.jpg" data-alt="Paint correction">
+            <img src="public/images/work-polish.jpg" alt="Paint correction" loading="lazy">
+            <div class="gallery-overlay"><span>Paint Correction</span></div>
+          </div>
+          <div class="gallery-item reveal" data-src="public/images/work-interior.jpg" data-alt="Interior detailing">
+            <img src="public/images/work-interior.jpg" alt="Interior detailing" loading="lazy">
+            <div class="gallery-overlay"><span>Interior Detail</span></div>
+          </div>
+          <div class="gallery-item reveal" data-src="public/images/work-coating.jpg" data-alt="Ceramic coating">
+            <img src="public/images/work-coating.jpg" alt="Ceramic coating" loading="lazy">
+            <div class="gallery-overlay"><span>Ceramic Coating</span></div>
+          </div>
+          <div class="gallery-item reveal" data-src="public/images/work-wheel.jpg" data-alt="Wheel detailing">
+            <img src="public/images/work-wheel.jpg" alt="Wheel detailing" loading="lazy">
+            <div class="gallery-overlay"><span>Wheel Detail</span></div>
+          </div>
+          <div class="gallery-item reveal" data-src="public/images/work-rear.jpg" data-alt="Rear detailing">
+            <img src="public/images/work-rear.jpg" alt="Rear detailing" loading="lazy">
+            <div class="gallery-overlay"><span>Rear Detail</span></div>
+          </div>
+          <div class="gallery-item reveal" data-src="public/images/studio.jpg" data-alt="Our studio">
+            <img src="public/images/studio.jpg" alt="Our studio" loading="lazy">
+            <div class="gallery-overlay"><span>Our Studio</span></div>
+          </div>
+          <div class="gallery-item reveal" data-src="public/images/after.jpg" data-alt="Before and after">
+            <img src="public/images/after.jpg" alt="Before and after" loading="lazy">
+            <div class="gallery-overlay"><span>Transformation</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image reveal">
+            <img src="public/images/studio.jpg" alt="DV Car Care studio in Liverpool" loading="lazy">
+          </div>
+          <div class="about-content">
+            <div class="section-label reveal">About Us</div>
+            <h2 class="reveal">Liverpool's Trusted Car Care Specialists</h2>
+            <p class="reveal">Based in Speke, Liverpool, DV Car Care has been providing premium vehicle detailing services to car enthusiasts across Merseyside. Our attention to detail and commitment to quality has made us a trusted name in the industry.</p>
+            <p class="reveal">We use only the finest products and latest techniques to ensure your vehicle receives the care it deserves. Whether it's a daily driver or a prized possession, we treat every car with the same level of precision and dedication.</p>
+            <div class="about-features reveal">
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+                </div>
+                <span>Premium Products</span>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                </div>
+                <span>Experienced Team</span>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                </div>
+                <span>Satisfaction Guaranteed</span>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <span>Liverpool Based</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+      <div class="cta-bg">
+        <img src="public/images/after.jpg" alt="" aria-hidden="true" loading="lazy">
+      </div>
+      <div class="cta-content container">
+        <h2 class="reveal">Ready to Transform Your Vehicle?</h2>
+        <p class="reveal">Book your appointment today and experience the DV Car Care difference. Get in touch for a free quote.</p>
+        <div class="cta-actions reveal">
+          <a href="tel:+447700900123" class="btn-primary">Call Now</a>
+          <a href="https://wa.me/447700900123" class="btn-secondary" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-mark">DV</div>
+            <span class="logo-text">DV Car Care</span>
+          </a>
+          <p>Professional car care and detailing services in Liverpool. Treat your vehicle to the care it deserves.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Exterior Detailing</a></li>
+            <li><a href="#services">Interior Detailing</a></li>
+            <li><a href="#services">Paint Correction</a></li>
+            <li><a href="#services">Ceramic Coating</a></li>
+            <li><a href="#services">Full Valet</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+447700900123">07700 900 123</a></li>
+            <li><a href="mailto:info@dvcarcare.co.uk">info@dvcarcare.co.uk</a></li>
+            <li><span style="color:var(--text-secondary);font-size:0.875rem;">94 Hale Road, Speke<br>Liverpool L24 1WH</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2024 DV Car Care. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <img src="" alt="" id="lightboxImg">
+  </div>
+
+  <script>
+    // ── Theme Toggle ──────────────────────────────────────
+    (function() {
+      var toggle = document.getElementById('themeToggle');
+      var html = document.documentElement;
+      var meta = document.querySelector('meta[name="theme-color"]');
+
+      function setTheme(theme) {
+        html.dataset.theme = theme;
+        try { localStorage.setItem('dvc-theme', theme); } catch(e) {}
+        if (meta) {
+          meta.setAttribute('content', theme === 'light' ? '#f8f7f2' : '#0a0b0e');
+        }
+        updateToggleIcon(theme);
+      }
+
+      function updateToggleIcon(theme) {
+        var sun = toggle.querySelector('.icon-sun');
+        var moon = toggle.querySelector('.icon-moon');
+        if (theme === 'dark') {
+          sun.style.display = 'none';
+          moon.style.display = 'block';
+        } else {
+          sun.style.display = 'block';
+          moon.style.display = 'none';
+        }
+      }
+
+      toggle.addEventListener('click', function() {
+        var current = html.dataset.theme;
+        setTheme(current === 'dark' ? 'light' : 'dark');
+      });
+
+      updateToggleIcon(html.dataset.theme);
+    })();
+
+    // ── Mobile Menu ───────────────────────────────────────
+    (function() {
+      var openBtn = document.getElementById('mobileToggle');
+      var closeBtn = document.getElementById('mobileClose');
+      var menu = document.getElementById('mobileMenu');
+      var links = menu.querySelectorAll('[data-mobile-link]');
+
+      function openMenu() {
+        menu.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        openBtn.setAttribute('aria-label', 'Close menu');
+      }
+
+      function closeMenu() {
+        menu.classList.remove('active');
+        document.body.style.overflow = '';
+        openBtn.setAttribute('aria-label', 'Open menu');
+      }
+
+      openBtn.addEventListener('click', function() {
+        if (menu.classList.contains('active')) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      closeBtn.addEventListener('click', closeMenu);
+
+      links.forEach(function(link) {
+        link.addEventListener('click', closeMenu);
+      });
+    })();
+
+    // ── Lightbox ──────────────────────────────────────────
+    (function() {
+      var lightbox = document.getElementById('lightbox');
+      var lightboxImg = document.getElementById('lightboxImg');
+      var closeBtn = lightbox.querySelector('.lightbox-close');
+      var items = document.querySelectorAll('.gallery-item');
+
+      items.forEach(function(item) {
+        item.addEventListener('click', function() {
+          var src = item.getAttribute('data-src');
+          var alt = item.getAttribute('data-alt');
+          lightboxImg.src = src;
+          lightboxImg.alt = alt;
+          lightbox.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      closeBtn.addEventListener('click', function() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+
+      lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) {
+          lightbox.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+          lightbox.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+    })();
+
+    // ── Scroll Reveal ─────────────────────────────────────
+    (function() {
+      var reveals = document.querySelectorAll('.reveal');
+
+      function checkReveal() {
+        var windowHeight = window.innerHeight;
+        reveals.forEach(function(el) {
+          var top = el.getBoundingClientRect().top;
+          if (top < windowHeight - 60) {
+            el.classList.add('revealed');
           }
-        } catch (e) {}
-      })();
-    </script>
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="DV Car Care" />
-    <meta property="og:title" content="DV Car Care | Car Detailing in Liverpool" />
-    <meta
-      property="og:description"
-      content="Professional car care and detailing services in Liverpool. Explore DV Car Care services, gallery and contact options."
-    />
-    <meta property="og:url" content="https://www.dvcarcare.co.uk/" />
-    <meta property="og:image" content="https://www.dvcarcare.co.uk/images/hero.jpg" />
-    <meta property="og:locale" content="en_GB" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="DV Car Care | Car Detailing in Liverpool" />
-    <meta
-      name="twitter:description"
-      content="Professional car care and detailing services in Liverpool. Explore DV Car Care services, gallery and contact options."
-    />
-    <meta name="twitter:image" content="https://www.dvcarcare.co.uk/images/hero.jpg" />
-
-    <style>
-      html {
-        scrollbar-width: none;
+        });
       }
-      html::-webkit-scrollbar {
-        display: none;
-      }
-    </style>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+      window.addEventListener('scroll', checkReveal);
+      window.addEventListener('resize', checkReveal);
+      checkReveal();
+    })();
 
-    <!-- Local business structured data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "AutoWash",
-        "name": "DV Car Care",
-        "description": "Professional car care and detailing services in Liverpool. Explore DV Car Care services, gallery and contact options.",
-        "url": "https://www.dvcarcare.co.uk/",
-        "telephone": "+44 7700 900 123",
-        "image": "https://www.dvcarcare.co.uk/images/hero.jpg",
-        "priceRange": "££",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "94 Hale Road, Speke",
-          "addressLocality": "Liverpool",
-          "postalCode": "L24 1WH",
-          "addressCountry": "GB"
-        },
-        "areaServed": ["Liverpool", "Speke", "Merseyside"]
-      }
-    </script>
-  </head>
-  <body>
-    <a
-      href="#main"
-      class="skip-link fixed left-4 top-4 z-[100] -translate-y-24 rounded-sm bg-bronze px-4 py-2 text-sm font-semibold text-onaccent transition-transform focus:translate-y-0"
-    >
-      Skip to main content
-    </a>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    // ── Smooth Scroll for Anchor Links ────────────────────
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        var href = this.getAttribute('href');
+        if (href === '#') return;
+        var target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
 </html>
